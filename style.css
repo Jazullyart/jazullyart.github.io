@@ -1,0 +1,215 @@
+@keyframes rotate-vert-center {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+
+ header {
+     width: auto;
+     height: 60px;
+     padding: 40px;
+     background-image: url("backgrounds/background-3.png");
+     background-size: contain;
+     background-repeat: initial;
+     margin: auto;
+ }
+
+ body {
+     font-family: 'Press Start 2P', arial;
+     background-image: url("backgrounds/background-2.png");
+     background-size: auto;
+     background-position: center;
+     padding: 0;
+     margin: 0;
+ }
+
+ .titulo {
+     text-align: center;
+     font-size: 35px;
+     color: #FFFFFF;
+     text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #9192ad, 0 3px 0 #9192ad, 0 4px 0 #9192ad, 0 5px 0 #9192ad, 0 6px 0px rgb(0, 0, 0);
+ }
+
+ #juego {
+     background-image: url("backgrounds/background-1.png");
+     background-size: auto;
+     background-repeat: no-repeat;
+     background-position: bottom;
+     box-shadow: 8px 8px rgb(70, 115, 199), -8px -8px rgb(173, 217, 255);
+     /* border: 8px outset rgb(247, 189, 0); */
+     padding: 20px;
+     margin: 60px;
+     display: flex;
+     justify-content: center;
+     justify-items: center;
+     align-items: center;
+     align-content: center;
+ }
+
+ #cuadro {
+     background-color: cadetblue;
+     width: 400px;
+     height: 500px;
+     margin: auto;
+ }
+
+ aside {
+     width: 20%;
+     margin: 20px;
+ }
+
+ #h-icon {
+     background-color: aquamarine;
+     width: 80px;
+     height: 80px;
+ }
+
+ .h,
+ .a,
+ .d,
+ .s,
+ .p {
+     display: flex;
+     text-align: center;
+     margin: 20px;
+     align-items: center;
+ }
+
+ aside p {
+     margin: 10px;
+ }
+
+ .btn {
+     font-family: 'Press Start 2P', cursive;
+     background-image: url("icons/botones-Sheet.png");
+     background-size: contain;
+     border: none;
+     width: 180px;
+     height: 75px;
+     font-size: 14px;
+     color: white;
+     text-shadow: 2px 2px 0px rgb(65, 99, 161);
+     margin: 20px;
+ }
+
+ .btn:hover {
+     background-image: url("icons/botoneshover.png");
+     background-size: contain;
+ }
+
+ .btn2 {
+     font-family: 'Press Start 2P', cursive;
+     background-image: url("icons/botones-Sheet.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     border: none;
+     width: 180px;
+     height: 70px;
+     font-size: 12px;
+     color: white;
+     text-shadow: 2px 2px 0px rgb(65, 99, 161);
+     margin: 20px;
+ }
+
+ .btn2:hover {
+     background-image: url("icons/botoneshover.png");
+     background-size: contain;
+ }
+
+ #interactuar {
+     width: 20%;
+     margin: auto;
+     text-align: center;
+ }
+
+ #ImaMascota {
+     width: 60%;
+     margin: auto;
+     text-align: center;
+ }
+
+ #MascotaImg {
+     width: 60%;
+     margin: auto;
+ }
+
+ .info {
+     width: 40%;
+     height: 100px;
+     background-color: rgba(240, 248, 255, 0.3);
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     justify-items: center;
+     align-items: center;
+     align-content: center;
+     margin: auto;
+     margin-bottom: 30px;
+     box-shadow: 8px 8px rgb(70, 115, 199), -8px -8px rgb(173, 217, 255);
+ }
+
+ .info h2,
+ .info p {
+     margin: 15px;
+ }
+
+ .login {
+     text-align: center;
+     background-color: beige;
+     width: 400px;
+     height: auto;
+     margin: auto;
+     margin-top: 60px;
+     padding: 20px;
+     box-shadow: 8px 8px rgb(70, 115, 199), -8px -8px rgb(173, 217, 255);
+ }
+
+ .login h2 {
+     padding: 20px;
+ }
+
+ .ipt {
+     padding: 15px;
+     margin: 10px;
+     width: 65%;
+     font-family: 'Press Start 2P', arial;
+     font-size: 10px;
+ }
+
+ .btnlog {
+     display: flex;
+ }
+
+ .btnlog p {
+     font-size: 10px;
+ }
+
+ .huevo {
+     width: 500px;
+     height: auto;
+     background-color: beige;
+     text-align: center;
+     margin: auto;
+     padding: 40px;
+     margin-top: 60px;
+     margin-bottom: 60px;
+     box-shadow: 8px 8px rgb(70, 115, 199), -8px -8px rgb(173, 217, 255);
+ }
+
+ #m1:hover,
+ #m2:hover,
+ #m3:hover {
+     border: 3px dotted sandybrown;
+ }
+
+ #Mus {
+    margin: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

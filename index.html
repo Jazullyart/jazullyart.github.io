@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tamagotchi Virtual</title>
+    <style>
+        @keyframes flip-vertical-right {
+            0% {
+                transform: rotateY(0);
+            }
+
+            100% {
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body onload="Load()">
+    <audio id="audio" src="sound/bestfriends.wav" autoplay="true" loop="true"></audio>
+    <header>
+        <h1 class="titulo">Tamagotchi virtual</h1>
+    </header>
+    <div id="contendorjuego">
+        <form id="login" class="login">
+            <h2>Iniciar sesión</h2>
+            <label for="usuario" class="lbl">Nombre de usuario:</label>
+            <br>
+            <input type="text" name="usuario" id="usuario" class="ipt" placeholder="Nombre de usuario">
+            <br><br><br>
+            <label for="contr" class="lbl">Contraseña:</label>
+            <br>
+            <input type="password" name="contr" id="contr" class="ipt" placeholder="Contraseña">
+            <br><br>
+            <div class="btnlog">
+                <input type="button" value="Entrar" onclick="Login()" class="btn2">
+                <input type="button" value="Registrarse" onclick="Register()" class="btn2">
+            </div>
+        </form>
+
+        <div id="huevo" class="huevo" style="display: none;">
+            <h2>Escoge tu huevo</h2>
+            <img src="pets/bunnyegg.png" alt="Huevo 1" id="m1">
+            <img src="pets/bunnyegg.png" alt="Huevo 2" id="m2">
+            <img src="pets/bunnyegg.png" alt="Huevo 3" id="m3">
+            <br> <br>
+            <h2>Ponle un nuevo nombre</h2>
+            <input type="text" name="nomm" id="nomm" class="ipt" placeholder="Nombre de tu nueva mascota">
+
+            <br><br>
+
+            <h2>Crea tu usuario</h2>
+            <br>
+            <label for="usuario">Nombre de usuario:</label>
+            <br>
+            <input type="text" name="usuarion" id="usuarion" class="ipt" placeholder="Nombre de usuario">
+            <br><br>
+            <label for="contr">Contraseña</label>
+            <br>
+            <input type="password" name="contrn" id="contrn" class="ipt" placeholder="Contraseña">
+
+            <br><br>
+
+            <input type="button" value="Regresar" id="Regre" class="btn2" onclick="LoginBack()">
+            <input type="button" value="Crear" id="CrearP" class="btn2" onclick="SaveUser()">
+        </div>
+
+        <div id="juego" style="display: none;">
+
+            <aside>
+                <div class="h">
+                    <img src="icons/h-icon2.png">
+                    <!-- <div id="h-icon"></div> -->
+                    <p id="HambreM">0</p>
+                </div>
+
+                <div class="a">
+                    <img src="icons/a-icon2.png">
+                    <p id="AmorM">0</p>
+                </div>
+
+                <div class="d">
+                    <img src="icons/d-icon3.png">
+                    <p id="DiversionM">0</p>
+                </div>
+
+                <div class="s">
+                    <img src="icons/a-salud.png">
+                    <p id="SaludM">0</p>
+                </div>
+
+                <div class="p">
+                    <img src="icons/p-icon.png">
+                    <p id="PesoM">0.0 kg</p>
+                </div>
+
+            </aside>
+
+            <br>
+
+            <div id="ImaMascota">
+                <img id="imam" src="">
+            </div>
+
+            <br>
+
+            <div id="interactuar">
+
+                <button id="comer" class="btn" onclick="Alimentar()">Alimentar</button>
+                <br>
+                <button id="acariciar" class="btn" onclick="Acariciar()">Acariciar</button>
+                <br>
+                <button id="jugar" class="btn" onclick="Jugar()">Jugar</button>
+                <br>
+                <button id="ejercitar" class="btn" onclick="Pasear()">Pasear</button>
+                <br>
+                <button id="aprender" class="btn" onclick="Aprender()">¡Da la vuelta!</button>
+            </div>
+        </div>
+        <div id="info" class="info" style="display: none;">
+            <p>Nombre:</p>
+            <h2 id="NombreM">xx</h1>
+                <p>Dueño:</p>
+                <h2 id="UsuM">xx</h1>
+        </div>
+    </div>
+    <p id="Mus">Presiona 'M' para activar música</p>
+    <script src="main.js"></script>
+</body>
+
+</html>
